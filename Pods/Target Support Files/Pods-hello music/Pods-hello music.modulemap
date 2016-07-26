@@ -1,0 +1,6 @@
+framework module Pods_hello_music {
+  umbrella header "Pods-hello music-umbrella.h"
+
+  export *
+  module * { export * }
+}
