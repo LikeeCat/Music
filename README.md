@@ -7,11 +7,11 @@
 
 ## 项目运行效果的截图
 
-![/Users/fanshukang/Desktop/屏幕快照 2016-07-26 下午3.29.09.png]()
+![https://github.com/xiangtaiduo/Music/blob/master/hello%20music/Assets.xcassets/1.imageset/1.png]()
 
-![/Users/fanshukang/Desktop/屏幕快照 2016-07-26 下午3.29.37.png]()
+![https://github.com/xiangtaiduo/Music/blob/master/hello%20music/Assets.xcassets/2.imageset/2.png]()
 
-![/Users/fanshukang/Desktop/屏幕快照 2016-07-26 下午3.30.05.png]()
+![https://github.com/xiangtaiduo/Music/blob/master/hello%20music/Assets.xcassets/3.imageset/3.png]()
 
 
 ## 播放器说明
@@ -31,16 +31,8 @@
 * TableView 的单元格的操作
 
 * 一些最基本的动画的实现
+
 * 网络数据的获取和解析
 
 ### 最后,如果你有什么疑问,请联系我
 QQ : 943536125
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-
-
-
->>>>>>> Stashed changes
