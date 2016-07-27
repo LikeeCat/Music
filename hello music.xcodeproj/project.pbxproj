@@ -77,19 +77,51 @@
 			isa = PBXGroup;
 			children = (
 				2F4CE1951D42F60100193B28 /* AppDelegate.swift */,
-				2F4CE1971D42F60100193B28 /* ViewController.swift */,
-				2FB60CA21D45DD30000098AA /* OrderButton.swift */,
-				2FB60CA01D45C308000098AA /* EkoButton.swift */,
-				2FFF08731D447E96003A15A0 /* HttpController.swift */,
-				2FFF086F1D4470EE003A15A0 /* ChannelViewController.swift */,
-				2F79FA4F1D44565400E3CC63 /* EkoImage.swift */,
 				2F4CE1991D42F60100193B28 /* Main.storyboard */,
 				2FBE98851D45F82C004B727F /* ListTableViewCell.swift */,
-				2F4CE19C1D42F60100193B28 /* Assets.xcassets */,
 				2F4CE19E1D42F60100193B28 /* LaunchScreen.storyboard */,
+				2F9C64F11D476007009F67C4 /* ViewController */,
+				2F9C64F21D476089009F67C4 /* Button Class */,
+				2F9C64F31D4760AC009F67C4 /* Http Request */,
+				2F9C64F41D4760DC009F67C4 /* Image Class */,
+				2F4CE19C1D42F60100193B28 /* Assets.xcassets */,
 				2F4CE1A11D42F60100193B28 /* Info.plist */,
 			);
 			path = "hello music";
+			sourceTree = "<group>";
+		};
+		2F9C64F11D476007009F67C4 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2FFF086F1D4470EE003A15A0 /* ChannelViewController.swift */,
+				2F4CE1971D42F60100193B28 /* ViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		2F9C64F21D476089009F67C4 /* Button Class */ = {
+			isa = PBXGroup;
+			children = (
+				2FB60CA21D45DD30000098AA /* OrderButton.swift */,
+				2FB60CA01D45C308000098AA /* EkoButton.swift */,
+			);
+			name = "Button Class";
+			sourceTree = "<group>";
+		};
+		2F9C64F31D4760AC009F67C4 /* Http Request */ = {
+			isa = PBXGroup;
+			children = (
+				2FFF08731D447E96003A15A0 /* HttpController.swift */,
+			);
+			name = "Http Request";
+			sourceTree = "<group>";
+		};
+		2F9C64F41D4760DC009F67C4 /* Image Class */ = {
+			isa = PBXGroup;
+			children = (
+				2F79FA4F1D44565400E3CC63 /* EkoImage.swift */,
+			);
+			name = "Image Class";
 			sourceTree = "<group>";
 		};
 		317779B03C279B1684AAAD73 /* Frameworks */ = {
