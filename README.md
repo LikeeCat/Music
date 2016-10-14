@@ -5,13 +5,11 @@
 * SWIFT 版本是 2.2
 * 在使用时请使用iphone6 plus/ iphone6s plus 模拟器运行
 
-## 项目运行效果的截图
+## 项目运行图
 
-![image](https://github.com/xiangtaiduo/Music/blob/master/hello%20music/Assets.xcassets/1.imageset/1.png)
+![image](https://github.com/xiangtaiduo/Music/blob/master/hello%20music/Assets.xcassets/MusicPlayer.gif)
 
-![image](https://github.com/xiangtaiduo/Music/blob/master/hello%20music/Assets.xcassets/2.imageset/2.png)
 
-![image](https://github.com/xiangtaiduo/Music/blob/master/hello%20music/Assets.xcassets/3.imageset/3.png)
 
 
 ## 播放器说明
