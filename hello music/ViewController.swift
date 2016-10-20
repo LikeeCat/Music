@@ -150,10 +150,10 @@ class ViewController: UIViewController ,HttpProtocol,ChannelProtocol,UITableView
 //       
 
         //监听按钮
-        btnPlay.addTarget(self, action: "onPlay:", forControlEvents: .TouchUpInside)
-        btnPre.addTarget(self, action: "onClick:", forControlEvents: .TouchUpInside)
-        btnNext.addTarget(self, action: "onClick:", forControlEvents: .TouchUpInside)
-        btnOrder.addTarget(self, action: "onOrder:", forControlEvents: .TouchUpInside)
+        btnPlay.addTarget(self, action: #selector(ViewController.onPlay(_:)), forControlEvents: .TouchUpInside)
+        btnPre.addTarget(self, action: #selector(ViewController.onClick(_:)), forControlEvents: .TouchUpInside)
+        btnNext.addTarget(self, action: #selector(ViewController.onClick(_:)), forControlEvents: .TouchUpInside)
+        btnOrder.addTarget(self, action: #selector(ViewController.onOrder(_:)), forControlEvents: .TouchUpInside)
 
         
     }
@@ -216,7 +216,9 @@ class ViewController: UIViewController ,HttpProtocol,ChannelProtocol,UITableView
                 }
                 onSelectRow(currIndex)
             case 2:
-                currIndex = random() % tableData.count
+               // currIndex = random() % tableData.count
+                currIndex = Int (arc4random())
+                currIndex = currIndex % tableData.count
                 onSelectRow(currIndex)
             case 3:
                 onSelectRow(currIndex)
@@ -312,9 +314,8 @@ class ViewController: UIViewController ,HttpProtocol,ChannelProtocol,UITableView
         spinImg.onRotation()
         
         timeBg.onRotation()
-         timeBg.layer.borderColor = UIColor(colorLiteralRed: 50/255 , green: 50/255, blue:50/255, alpha: 1).CGColor
         
-       timeBg.layer.borderWidth = 6
+        
     }
     
     //设置cell的显示动画
@@ -426,9 +427,9 @@ class ViewController: UIViewController ,HttpProtocol,ChannelProtocol,UITableView
         let imgUrl = rowData["picture"].string
           onSetImg(imgUrl!)
         
-        var url = rowData["url"].string
+        let url = rowData["url"].string
         
-         var a = rowData["sha256"].string
+         let a = rowData["sha256"].string
         print(a)
         
       onSetAudio(url!)
@@ -450,7 +451,7 @@ class ViewController: UIViewController ,HttpProtocol,ChannelProtocol,UITableView
     }
     func onGetCacheImage(url:String,var imageCache:UIImage)  {
         //通过图片地址去缓存中存图片
-        var img = self.imageCache[url] as UIImage?
+        let img = self.imageCache[url] as UIImage?
         //判断缓存中是否有这张图片
         if img == nil{
            //通过网络请求获取这张图片

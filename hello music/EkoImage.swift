@@ -25,15 +25,13 @@ class EkoImage: UIImageView {
         
         self.layer.cornerRadius = self.frame.size.width/2
         
-        //边框描边
-        self.layer.borderWidth = 4
-        self.layer.borderColor = UIColor(colorLiteralRed: 1.0, green: 1.0, blue: 0.95, alpha: 0.7).CGColor
+       
         
     }
       //旋转
     func onRotation( ){
         //动画实例关键字
-        var animation = CABasicAnimation(keyPath: "transform.rotation")
+        let animation = CABasicAnimation(keyPath: "transform.rotation")
     
        //初始值
         
